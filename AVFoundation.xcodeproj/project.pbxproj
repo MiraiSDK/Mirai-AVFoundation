@@ -8,27 +8,79 @@
 
 /* Begin PBXBuildFile section */
 		4317BBD61B5F81910030CF5B /* AVFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BBD51B5F81910030CF5B /* AVFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4317BBDC1B5F81910030CF5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317BBD01B5F81910030CF5B /* AVFoundation.framework */; };
-		4317BBE31B5F81910030CF5B /* AVFoundationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BBE21B5F81910030CF5B /* AVFoundationTests.m */; };
+		4317BBF51B5F83A60030CF5B /* AVError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BBF31B5F83A60030CF5B /* AVError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BBF61B5F83A60030CF5B /* AVError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BBF41B5F83A60030CF5B /* AVError.m */; };
+		4317BBF81B5F86660030CF5B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4317BBF71B5F86660030CF5B /* Foundation.framework */; };
+		4317BBFB1B5F87810030CF5B /* AVAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BBF91B5F87810030CF5B /* AVAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BBFC1B5F87810030CF5B /* AVAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BBFA1B5F87810030CF5B /* AVAudioPlayer.m */; };
+		4317BBFF1B5F878B0030CF5B /* AVAudioPlayerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BBFD1B5F878B0030CF5B /* AVAudioPlayerNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC001B5F878B0030CF5B /* AVAudioPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BBFE1B5F878B0030CF5B /* AVAudioPlayerNode.m */; };
+		4317BC031B5F87970030CF5B /* AVAudioRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC011B5F87970030CF5B /* AVAudioRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC041B5F87970030CF5B /* AVAudioRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC021B5F87970030CF5B /* AVAudioRecorder.m */; };
+		4317BC071B5F87A80030CF5B /* AVAudioBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC051B5F87A80030CF5B /* AVAudioBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC081B5F87A80030CF5B /* AVAudioBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC061B5F87A80030CF5B /* AVAudioBuffer.m */; };
+		4317BC0B1B5F87B20030CF5B /* AVAudioChannelLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC091B5F87B20030CF5B /* AVAudioChannelLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC0C1B5F87B20030CF5B /* AVAudioChannelLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC0A1B5F87B20030CF5B /* AVAudioChannelLayout.m */; };
+		4317BC0F1B5F87BB0030CF5B /* AVAudioEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC0D1B5F87BB0030CF5B /* AVAudioEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC101B5F87BB0030CF5B /* AVAudioEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC0E1B5F87BB0030CF5B /* AVAudioEngine.m */; };
+		4317BC131B5F87C20030CF5B /* AVAudioEnvironmentNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC111B5F87C20030CF5B /* AVAudioEnvironmentNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC141B5F87C20030CF5B /* AVAudioEnvironmentNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC121B5F87C20030CF5B /* AVAudioEnvironmentNode.m */; };
+		4317BC171B5F87CA0030CF5B /* AVAudioFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC151B5F87CA0030CF5B /* AVAudioFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC181B5F87CA0030CF5B /* AVAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC161B5F87CA0030CF5B /* AVAudioFile.m */; };
+		4317BC1B1B5F87D40030CF5B /* AVAudioFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC191B5F87D40030CF5B /* AVAudioFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC1C1B5F87D40030CF5B /* AVAudioFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC1A1B5F87D40030CF5B /* AVAudioFormat.m */; };
+		4317BC1F1B5F87E10030CF5B /* AVAudioIONode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC1D1B5F87E10030CF5B /* AVAudioIONode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC201B5F87E10030CF5B /* AVAudioIONode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC1E1B5F87E10030CF5B /* AVAudioIONode.m */; };
+		4317BC231B5F87EB0030CF5B /* AVAudioMixerNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC211B5F87EB0030CF5B /* AVAudioMixerNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC241B5F87EB0030CF5B /* AVAudioMixerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC221B5F87EB0030CF5B /* AVAudioMixerNode.m */; };
+		4317BC271B5F87F30030CF5B /* AVAudioMixing.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC251B5F87F30030CF5B /* AVAudioMixing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC281B5F87F30030CF5B /* AVAudioMixing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC261B5F87F30030CF5B /* AVAudioMixing.m */; };
+		4317BC2B1B5F880D0030CF5B /* AVAudioNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC291B5F880D0030CF5B /* AVAudioNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC2C1B5F880D0030CF5B /* AVAudioNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC2A1B5F880D0030CF5B /* AVAudioNode.m */; };
+		4317BC2F1B5F881F0030CF5B /* AVBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC2D1B5F881F0030CF5B /* AVBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC331B5F88F60030CF5B /* AVAudioSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 4317BC311B5F88F60030CF5B /* AVAudioSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4317BC341B5F88F60030CF5B /* AVAudioSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4317BC321B5F88F60030CF5B /* AVAudioSettings.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		4317BBDD1B5F81910030CF5B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4317BBC71B5F81910030CF5B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4317BBCF1B5F81910030CF5B;
-			remoteInfo = AVFoundation;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4317BBD01B5F81910030CF5B /* AVFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AVFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4317BBD41B5F81910030CF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4317BBD51B5F81910030CF5B /* AVFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundation.h; sourceTree = "<group>"; };
-		4317BBDB1B5F81910030CF5B /* AVFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4317BBE11B5F81910030CF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4317BBE21B5F81910030CF5B /* AVFoundationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationTests.m; sourceTree = "<group>"; };
+		4317BBED1B5F81A50030CF5B /* Android-arm.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Android-arm.xcconfig"; sourceTree = "<group>"; };
+		4317BBEE1B5F81A50030CF5B /* Android-x86.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Android-x86.xcconfig"; sourceTree = "<group>"; };
+		4317BBEF1B5F81A50030CF5B /* Android.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Android.xcconfig; sourceTree = "<group>"; };
+		4317BBF31B5F83A60030CF5B /* AVError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVError.h; sourceTree = "<group>"; };
+		4317BBF41B5F83A60030CF5B /* AVError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVError.m; sourceTree = "<group>"; };
+		4317BBF71B5F86660030CF5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4317BBF91B5F87810030CF5B /* AVAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioPlayer.h; sourceTree = "<group>"; };
+		4317BBFA1B5F87810030CF5B /* AVAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioPlayer.m; sourceTree = "<group>"; };
+		4317BBFD1B5F878B0030CF5B /* AVAudioPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioPlayerNode.h; sourceTree = "<group>"; };
+		4317BBFE1B5F878B0030CF5B /* AVAudioPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioPlayerNode.m; sourceTree = "<group>"; };
+		4317BC011B5F87970030CF5B /* AVAudioRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioRecorder.h; sourceTree = "<group>"; };
+		4317BC021B5F87970030CF5B /* AVAudioRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioRecorder.m; sourceTree = "<group>"; };
+		4317BC051B5F87A80030CF5B /* AVAudioBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioBuffer.h; sourceTree = "<group>"; };
+		4317BC061B5F87A80030CF5B /* AVAudioBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioBuffer.m; sourceTree = "<group>"; };
+		4317BC091B5F87B20030CF5B /* AVAudioChannelLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioChannelLayout.h; sourceTree = "<group>"; };
+		4317BC0A1B5F87B20030CF5B /* AVAudioChannelLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioChannelLayout.m; sourceTree = "<group>"; };
+		4317BC0D1B5F87BB0030CF5B /* AVAudioEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioEngine.h; sourceTree = "<group>"; };
+		4317BC0E1B5F87BB0030CF5B /* AVAudioEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioEngine.m; sourceTree = "<group>"; };
+		4317BC111B5F87C20030CF5B /* AVAudioEnvironmentNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioEnvironmentNode.h; sourceTree = "<group>"; };
+		4317BC121B5F87C20030CF5B /* AVAudioEnvironmentNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioEnvironmentNode.m; sourceTree = "<group>"; };
+		4317BC151B5F87CA0030CF5B /* AVAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioFile.h; sourceTree = "<group>"; };
+		4317BC161B5F87CA0030CF5B /* AVAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioFile.m; sourceTree = "<group>"; };
+		4317BC191B5F87D40030CF5B /* AVAudioFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioFormat.h; sourceTree = "<group>"; };
+		4317BC1A1B5F87D40030CF5B /* AVAudioFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioFormat.m; sourceTree = "<group>"; };
+		4317BC1D1B5F87E10030CF5B /* AVAudioIONode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioIONode.h; sourceTree = "<group>"; };
+		4317BC1E1B5F87E10030CF5B /* AVAudioIONode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioIONode.m; sourceTree = "<group>"; };
+		4317BC211B5F87EB0030CF5B /* AVAudioMixerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioMixerNode.h; sourceTree = "<group>"; };
+		4317BC221B5F87EB0030CF5B /* AVAudioMixerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioMixerNode.m; sourceTree = "<group>"; };
+		4317BC251B5F87F30030CF5B /* AVAudioMixing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioMixing.h; sourceTree = "<group>"; };
+		4317BC261B5F87F30030CF5B /* AVAudioMixing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioMixing.m; sourceTree = "<group>"; };
+		4317BC291B5F880D0030CF5B /* AVAudioNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioNode.h; sourceTree = "<group>"; };
+		4317BC2A1B5F880D0030CF5B /* AVAudioNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioNode.m; sourceTree = "<group>"; };
+		4317BC2D1B5F881F0030CF5B /* AVBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVBase.h; sourceTree = "<group>"; };
+		4317BC311B5F88F60030CF5B /* AVAudioSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVAudioSettings.h; sourceTree = "<group>"; };
+		4317BC321B5F88F60030CF5B /* AVAudioSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVAudioSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,14 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4317BBD81B5F81910030CF5B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4317BBDC1B5F81910030CF5B /* AVFoundation.framework in Frameworks */,
+				4317BBF81B5F86660030CF5B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +98,8 @@
 		4317BBC61B5F81910030CF5B = {
 			isa = PBXGroup;
 			children = (
+				4317BBEC1B5F81A50030CF5B /* xcconfig */,
 				4317BBD21B5F81910030CF5B /* AVFoundation */,
-				4317BBDF1B5F81910030CF5B /* AVFoundationTests */,
 				4317BBD11B5F81910030CF5B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +108,6 @@
 			isa = PBXGroup;
 			children = (
 				4317BBD01B5F81910030CF5B /* AVFoundation.framework */,
-				4317BBDB1B5F81910030CF5B /* AVFoundationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +116,37 @@
 			isa = PBXGroup;
 			children = (
 				4317BBD51B5F81910030CF5B /* AVFoundation.h */,
+				4317BC2D1B5F881F0030CF5B /* AVBase.h */,
+				4317BC051B5F87A80030CF5B /* AVAudioBuffer.h */,
+				4317BC061B5F87A80030CF5B /* AVAudioBuffer.m */,
+				4317BC091B5F87B20030CF5B /* AVAudioChannelLayout.h */,
+				4317BC0A1B5F87B20030CF5B /* AVAudioChannelLayout.m */,
+				4317BC0D1B5F87BB0030CF5B /* AVAudioEngine.h */,
+				4317BC0E1B5F87BB0030CF5B /* AVAudioEngine.m */,
+				4317BC111B5F87C20030CF5B /* AVAudioEnvironmentNode.h */,
+				4317BC121B5F87C20030CF5B /* AVAudioEnvironmentNode.m */,
+				4317BC151B5F87CA0030CF5B /* AVAudioFile.h */,
+				4317BC161B5F87CA0030CF5B /* AVAudioFile.m */,
+				4317BC191B5F87D40030CF5B /* AVAudioFormat.h */,
+				4317BC1A1B5F87D40030CF5B /* AVAudioFormat.m */,
+				4317BC1D1B5F87E10030CF5B /* AVAudioIONode.h */,
+				4317BC1E1B5F87E10030CF5B /* AVAudioIONode.m */,
+				4317BC211B5F87EB0030CF5B /* AVAudioMixerNode.h */,
+				4317BC221B5F87EB0030CF5B /* AVAudioMixerNode.m */,
+				4317BC251B5F87F30030CF5B /* AVAudioMixing.h */,
+				4317BC261B5F87F30030CF5B /* AVAudioMixing.m */,
+				4317BC291B5F880D0030CF5B /* AVAudioNode.h */,
+				4317BC2A1B5F880D0030CF5B /* AVAudioNode.m */,
+				4317BC311B5F88F60030CF5B /* AVAudioSettings.h */,
+				4317BC321B5F88F60030CF5B /* AVAudioSettings.m */,
+				4317BBF91B5F87810030CF5B /* AVAudioPlayer.h */,
+				4317BBFA1B5F87810030CF5B /* AVAudioPlayer.m */,
+				4317BBFD1B5F878B0030CF5B /* AVAudioPlayerNode.h */,
+				4317BBFE1B5F878B0030CF5B /* AVAudioPlayerNode.m */,
+				4317BC011B5F87970030CF5B /* AVAudioRecorder.h */,
+				4317BC021B5F87970030CF5B /* AVAudioRecorder.m */,
+				4317BBF31B5F83A60030CF5B /* AVError.h */,
+				4317BBF41B5F83A60030CF5B /* AVError.m */,
 				4317BBD31B5F81910030CF5B /* Supporting Files */,
 			);
 			path = AVFoundation;
@@ -80,26 +155,20 @@
 		4317BBD31B5F81910030CF5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4317BBF71B5F86660030CF5B /* Foundation.framework */,
 				4317BBD41B5F81910030CF5B /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		4317BBDF1B5F81910030CF5B /* AVFoundationTests */ = {
+		4317BBEC1B5F81A50030CF5B /* xcconfig */ = {
 			isa = PBXGroup;
 			children = (
-				4317BBE21B5F81910030CF5B /* AVFoundationTests.m */,
-				4317BBE01B5F81910030CF5B /* Supporting Files */,
+				4317BBED1B5F81A50030CF5B /* Android-arm.xcconfig */,
+				4317BBEE1B5F81A50030CF5B /* Android-x86.xcconfig */,
+				4317BBEF1B5F81A50030CF5B /* Android.xcconfig */,
 			);
-			path = AVFoundationTests;
-			sourceTree = "<group>";
-		};
-		4317BBE01B5F81910030CF5B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4317BBE11B5F81910030CF5B /* Info.plist */,
-			);
-			name = "Supporting Files";
+			path = xcconfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +178,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4317BC2F1B5F881F0030CF5B /* AVBase.h in Headers */,
+				4317BC231B5F87EB0030CF5B /* AVAudioMixerNode.h in Headers */,
+				4317BC171B5F87CA0030CF5B /* AVAudioFile.h in Headers */,
+				4317BC1B1B5F87D40030CF5B /* AVAudioFormat.h in Headers */,
+				4317BC071B5F87A80030CF5B /* AVAudioBuffer.h in Headers */,
+				4317BBFB1B5F87810030CF5B /* AVAudioPlayer.h in Headers */,
+				4317BBFF1B5F878B0030CF5B /* AVAudioPlayerNode.h in Headers */,
+				4317BC2B1B5F880D0030CF5B /* AVAudioNode.h in Headers */,
+				4317BC131B5F87C20030CF5B /* AVAudioEnvironmentNode.h in Headers */,
+				4317BC331B5F88F60030CF5B /* AVAudioSettings.h in Headers */,
+				4317BC0B1B5F87B20030CF5B /* AVAudioChannelLayout.h in Headers */,
+				4317BC271B5F87F30030CF5B /* AVAudioMixing.h in Headers */,
+				4317BC0F1B5F87BB0030CF5B /* AVAudioEngine.h in Headers */,
+				4317BC1F1B5F87E10030CF5B /* AVAudioIONode.h in Headers */,
+				4317BC031B5F87970030CF5B /* AVAudioRecorder.h in Headers */,
+				4317BBF51B5F83A60030CF5B /* AVError.h in Headers */,
 				4317BBD61B5F81910030CF5B /* AVFoundation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +209,7 @@
 				4317BBCC1B5F81910030CF5B /* Frameworks */,
 				4317BBCD1B5F81910030CF5B /* Headers */,
 				4317BBCE1B5F81910030CF5B /* Resources */,
+				4317BC351B5F8C200030CF5B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -133,24 +219,6 @@
 			productName = AVFoundation;
 			productReference = 4317BBD01B5F81910030CF5B /* AVFoundation.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		4317BBDA1B5F81910030CF5B /* AVFoundationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4317BBE91B5F81910030CF5B /* Build configuration list for PBXNativeTarget "AVFoundationTests" */;
-			buildPhases = (
-				4317BBD71B5F81910030CF5B /* Sources */,
-				4317BBD81B5F81910030CF5B /* Frameworks */,
-				4317BBD91B5F81910030CF5B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4317BBDE1B5F81910030CF5B /* PBXTargetDependency */,
-			);
-			name = AVFoundationTests;
-			productName = AVFoundationTests;
-			productReference = 4317BBDB1B5F81910030CF5B /* AVFoundationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -162,9 +230,6 @@
 				ORGANIZATIONNAME = "Shanghai TinyNetwork Inc.";
 				TargetAttributes = {
 					4317BBCF1B5F81910030CF5B = {
-						CreatedOnToolsVersion = 6.4;
-					};
-					4317BBDA1B5F81910030CF5B = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -182,7 +247,6 @@
 			projectRoot = "";
 			targets = (
 				4317BBCF1B5F81910030CF5B /* AVFoundation */,
-				4317BBDA1B5F81910030CF5B /* AVFoundationTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,40 +259,48 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4317BBD91B5F81910030CF5B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4317BC351B5F8C200030CF5B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "pushd \"$SDK_LIB_PATH\"\nln -sf \"$LD_DYLIB_INSTALL_NAME\" \"lib$PRODUCT_NAME.so\"\npopd\n\npushd \"$SDK_ROOT/usr/include\"\nln -sf \"$INSTALL_PATH/$PUBLIC_HEADERS_FOLDER_PATH\" \"$PRODUCT_NAME\"\npopd\n";
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4317BBCB1B5F81910030CF5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4317BBD71B5F81910030CF5B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4317BBE31B5F81910030CF5B /* AVFoundationTests.m in Sources */,
+				4317BC181B5F87CA0030CF5B /* AVAudioFile.m in Sources */,
+				4317BBFC1B5F87810030CF5B /* AVAudioPlayer.m in Sources */,
+				4317BBF61B5F83A60030CF5B /* AVError.m in Sources */,
+				4317BC001B5F878B0030CF5B /* AVAudioPlayerNode.m in Sources */,
+				4317BC041B5F87970030CF5B /* AVAudioRecorder.m in Sources */,
+				4317BC341B5F88F60030CF5B /* AVAudioSettings.m in Sources */,
+				4317BC101B5F87BB0030CF5B /* AVAudioEngine.m in Sources */,
+				4317BC1C1B5F87D40030CF5B /* AVAudioFormat.m in Sources */,
+				4317BC281B5F87F30030CF5B /* AVAudioMixing.m in Sources */,
+				4317BC201B5F87E10030CF5B /* AVAudioIONode.m in Sources */,
+				4317BC081B5F87A80030CF5B /* AVAudioBuffer.m in Sources */,
+				4317BC241B5F87EB0030CF5B /* AVAudioMixerNode.m in Sources */,
+				4317BC2C1B5F880D0030CF5B /* AVAudioNode.m in Sources */,
+				4317BC0C1B5F87B20030CF5B /* AVAudioChannelLayout.m in Sources */,
+				4317BC141B5F87C20030CF5B /* AVAudioEnvironmentNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4317BBDE1B5F81910030CF5B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4317BBCF1B5F81910030CF5B /* AVFoundation */;
-			targetProxy = 4317BBDD1B5F81910030CF5B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		4317BBE41B5F81910030CF5B /* Debug */ = {
@@ -270,7 +342,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx0.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -308,7 +380,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx0.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -316,67 +388,33 @@
 		};
 		4317BBE71B5F81910030CF5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4317BBEF1B5F81A50030CF5B /* Android.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = AVFoundation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
 		4317BBE81B5F81910030CF5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4317BBEF1B5F81A50030CF5B /* Android.xcconfig */;
 			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
+				COMBINE_HIDPI_IMAGES = NO;
+				DEFINES_MODULE = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = AVFoundation/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		4317BBEA1B5F81910030CF5B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AVFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		4317BBEB1B5F81910030CF5B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AVFoundationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};
@@ -397,14 +435,6 @@
 			buildConfigurations = (
 				4317BBE71B5F81910030CF5B /* Debug */,
 				4317BBE81B5F81910030CF5B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		4317BBE91B5F81910030CF5B /* Build configuration list for PBXNativeTarget "AVFoundationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4317BBEA1B5F81910030CF5B /* Debug */,
-				4317BBEB1B5F81910030CF5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
